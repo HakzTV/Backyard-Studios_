@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "futura_bk_btbook";
+  src: url("/fonts/futuran-webfont.woff2") format("woff2"),
+    url("/fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "century_gothicbold";
+  src: url("/fonts/gothicb-webfont.woff2") format("woff2"),
+    url("/fonts/gothicb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "century_gothicregular";
+  src: url("/fonts/gothic-webfont.woff2") format("woff2"),
+    url("/fonts/gothic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "century_gothicitalic";
+  src: url("/fonts/gothici-webfont.woff2") format("woff2"),
+    url("/fonts/gothici-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-font: "futura_bk_btbook";
+  --secondary-font-var1: "century_gothicbold";
+  --secondary-font-var2: "century_gothicregular";
+  --secondary-font-var3: "century_gothicitalic";
+  --primary-color: #333333;
+  --secondary-color: #eceaea;
+  --button-colors: #e8be2a;
+  --primary-font-color: #f2f2f2;
+  --secondary-font-color: 000000;
+  --text-bg-clr: #c4c4c4;
+  --overlay: rgba(0, 0, 0, 0.3);
+}
+* {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--button-colors);
+}
+
+nav {
+  font-family: var(--secondary-font-var2);
+  background-color: var(--overlay);
+  /* width: 80vw; */
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 0 10vw; */
+  min-height: 8vh;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 90px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+.links li {
+  list-style-type: none;
+}
+
+.links a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0 20px;
+  transition: color 0.5s;
+  display: block;
+}
+nav ul li a:hover {
+  color: var(--button-colors);
+}
+
+.menu-toggle img {
+  height: 15px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;S
+  }
+  .links {
+    position: absolute;
+    width: 100vw;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    top: 8vh;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+  }
+  .links li {
+    opacity: 0;
+  }
+  .logo img {
+    height: 70px;
+    z-index: 3;
+  }
+  .menu-toggle img {
+    display: block;
+    z-index: 3;
+  }
+  .links-active {
+    transform: translateX(0);
+  }
+  /* .
+  nav ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 5rem 1rem;
+    padding: 20px;
+  } */
+}
+/* nav .dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 40px 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+} */
