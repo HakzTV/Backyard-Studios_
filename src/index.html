@@ -10,40 +10,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div  class="logo"> <img src="/image/Logo set'.png" alt=""></div>
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About us</a></li>
-            <li>
-                <a href="services.html">Our Services</a>
-                    <!-- <ul class="dropdown">
-                            <li><a href="servies.html">Branding/Product design</a></li>
-                            <li><a href="servies.html">UI/UX design & Consultation</a></li>
-                            <li><a href="servies.html">Web Developement</a></li>
-                        </ul> -->
-            </li>
-        </ul>
-            <div class="menu-toggle"><img src="/image/Open&Close button.png" alt="open button"></div>
-        </nav>
+    <header>
+         <img class="logo" src="/image/Logo set'.png" alt="">
+         <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li>
+                    <a href="services.html">Our Services</a>
+                        <!-- <ul class="dropdown">
+                                <li><a href="servies.html">Branding/Product design</a></li>
+                                <li><a href="servies.html">UI/UX design & Consultation</a></li>
+                                <li><a href="servies.html">Web Developement</a></li>
+                            </ul> -->
+                </li>
+            </ul>
+         </nav>
+        
+            <!-- <div class="menu-toggle"><img src="/image/Open&Close button.png" alt="open button"></div> -->
+        </header>
+
+        <!-- Hero Section -->
         <section id="hero">
             <img src="../image/hero-img.jpg" alt="Hero Image">
             <div class="hero-txt">
-                <h1>we push your brand to it's full potential</h1>
-                <button>Contact us</button>
+            <h1>We push your brand to it's full potential</h1>
+            <button class = "contact-us">Contact us</button>
             </div>
+      
         </section>
+
+        <!-- ABOUT US -->
         <section id="about-us">
-            <h3>About us</h3>
-            <div class="about-us-info">
-                <img src="../image/about-us-section.png" alt="Logo">
+            <h2>About us</h2>
+            <div class="wrapper">
                 <div class="about-us-info">
-                    Backyard is a branding agency that specializes in creating and launching brands, and rebranding. The role of backyard is to create, plan, measure and manage branding strategies for clients, including support in advertising and other forms of promotion.
+                    <img src="../image/about-us-section.png" alt="Logo">
+                    <p class="about-us-text">
+                        Backyard is a branding agency that specializes in creating and launching brands, and rebranding. The role of backyard is to create, plan, measure and manage branding strategies for clients, including support in advertising and other forms of promotion.
+                    </p>
                 </div>
             </div>
+            
         </section>
-        <section id="Projects">
-            <h3>Projects</h3>
+        <section id="projects">
+            <h2>Projects</h2>
             <div class="wrapper">
                 <div class="carousel">
                     <img src="../image/Project 1.png" alt="Carousel image of projects">

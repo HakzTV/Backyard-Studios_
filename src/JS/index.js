@@ -11,3 +11,7 @@ const navSlide = ()=>{
 
 
 navSlide();
+
+
+
+console.log(button)
